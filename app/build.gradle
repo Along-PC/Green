@@ -38,7 +38,7 @@ android {
     }
 
     buildTypes {
-        debug{
+        debug {
             //脚本构建时网址进行切换
             buildConfigField('String', 'WS_REALM_NAME', '"ws://api.mmednet.com/app"')
 
@@ -103,7 +103,6 @@ def releaseTime() {
 //    return new Date().format('MMddHH', TimeZone.getTimeZone('GMT+8'))
     return new Date().format('MMdd', TimeZone.getTimeZone('GMT+8'))
 }
-
 
 
 dependencies {

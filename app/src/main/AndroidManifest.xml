@@ -10,22 +10,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <meta-data android:name="CHANNEL"
+        <meta-data
+            android:name="CHANNEL"
             android:value="${CHANNEL_VALUE}" />
 
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".SecondActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".TestActivity">
-
-        </activity>
-
     </application>
 
 </manifest>
