@@ -1,0 +1,139 @@
+{
+    "project_type": "gradle",
+    "android_gradle_plugin_version": "3.0.0",
+    "freeline_gradle_plugin_version": "0.8.8",
+    "java_home": "C:\\Program Files\\Java\\jdk1.8.0_65",
+    "freeline_cache_dir": "C:\\workspace\\Along",
+    "auto_dependency": true,
+    "product_flavor": "xiaomi",
+    "build_script": "gradlew.bat :app:assembleXiaomiDebug",
+    "build_script_work_directory": "",
+    "root_dir": "C:\\workspace\\Along",
+    "main_project_name": "app",
+    "main_project_dir": "app",
+    "build_directory": "C:\\workspace\\Along\\app\\build",
+    "build_cache_dir": "C:\\workspace\\Along\\app\\build\\freeline",
+    "build_tools_version": "26.0.2",
+    "sdk_directory": "C:\\ISdk",
+    "build_tools_directory": "C:\\ISdk\\build-tools\\26.0.2",
+    "compile_sdk_version": "android-26",
+    "compile_sdk_directory": "C:\\ISdk\\platforms\\android-26",
+    "package": "com.example.along",
+    "debug_package": "com.example.along",
+    "main_manifest_path": "C:\\workspace\\Along\\app\\src\\main\\AndroidManifest.xml",
+    "launcher": "com.example.along.SecondActivity",
+    "apk_path": "C:\\workspace\\Along\\app\\build\\outputs\\apk\\xiaomi\\debug\\green_v1.0_xiaomi_0411_debug.apk",
+    "extra_dep_res_paths": [
+        
+    ],
+    "exclude_dep_res_paths": [
+        
+    ],
+    "main_r_path": "C:\\workspace\\Along\\app\\build\\generated\\source\\r\\xiaomi\\debug\\R.java",
+    "use_jdk8": true,
+    "ignore_resource_ids": [
+        "avd_hide_password_1",
+        "avd_hide_password_2",
+        "avd_hide_password_3",
+        "avd_show_password_1",
+        "avd_show_password_2",
+        "avd_show_password_3"
+    ],
+    "use_system_gradle": false,
+    "check_sources_md5": [
+        
+    ],
+    "main_src_directory": [
+        "C:\\workspace\\Along\\app\\src\\xiaomiDebug\\java",
+        "C:\\workspace\\Along\\app\\src\\debug\\java",
+        "C:\\workspace\\Along\\app\\src\\xiaomi\\java",
+        "C:\\workspace\\Along\\app\\src\\main\\java"
+    ],
+    "main_res_directory": [
+        "C:\\workspace\\Along\\app\\src\\xiaomiDebug\\res",
+        "C:\\workspace\\Along\\app\\src\\debug\\res",
+        "C:\\workspace\\Along\\app\\src\\xiaomi\\res",
+        "C:\\workspace\\Along\\app\\src\\main\\res"
+    ],
+    "main_assets_directory": [
+        "C:\\workspace\\Along\\app\\src\\xiaomiDebug\\assets",
+        "C:\\workspace\\Along\\app\\src\\debug\\assets",
+        "C:\\workspace\\Along\\app\\src\\xiaomi\\assets",
+        "C:\\workspace\\Along\\app\\src\\main\\assets"
+    ],
+    "main_jni_directory": [
+        "C:\\workspace\\Along\\app\\src\\xiaomiDebug\\jni",
+        "C:\\workspace\\Along\\app\\src\\debug\\jni",
+        "C:\\workspace\\Along\\app\\src\\xiaomi\\jni",
+        "C:\\workspace\\Along\\app\\src\\main\\jni"
+    ],
+    "main_jniLibs_directory": [
+        "C:\\workspace\\Along\\app\\src\\xiaomiDebug\\jniLibs",
+        "C:\\workspace\\Along\\app\\src\\debug\\jniLibs",
+        "C:\\workspace\\Along\\app\\src\\xiaomi\\jniLibs",
+        "C:\\workspace\\Along\\app\\src\\main\\jniLibs"
+    ],
+    "project_source_sets": {
+        "app": {
+            "main_src_directory": [
+                "C:\\workspace\\Along\\app\\src\\xiaomiDebug\\java",
+                "C:\\workspace\\Along\\app\\src\\debug\\java",
+                "C:\\workspace\\Along\\app\\src\\xiaomi\\java",
+                "C:\\workspace\\Along\\app\\src\\main\\java"
+            ],
+            "main_res_directory": [
+                "C:\\workspace\\Along\\app\\src\\xiaomiDebug\\res",
+                "C:\\workspace\\Along\\app\\src\\debug\\res",
+                "C:\\workspace\\Along\\app\\src\\xiaomi\\res",
+                "C:\\workspace\\Along\\app\\src\\main\\res"
+            ],
+            "main_assets_directory": [
+                "C:\\workspace\\Along\\app\\src\\xiaomiDebug\\assets",
+                "C:\\workspace\\Along\\app\\src\\debug\\assets",
+                "C:\\workspace\\Along\\app\\src\\xiaomi\\assets",
+                "C:\\workspace\\Along\\app\\src\\main\\assets"
+            ],
+            "main_jni_directory": [
+                "C:\\workspace\\Along\\app\\src\\xiaomiDebug\\jni",
+                "C:\\workspace\\Along\\app\\src\\debug\\jni",
+                "C:\\workspace\\Along\\app\\src\\xiaomi\\jni",
+                "C:\\workspace\\Along\\app\\src\\main\\jni"
+            ],
+            "main_jniLibs_directory": [
+                "C:\\workspace\\Along\\app\\src\\xiaomiDebug\\jniLibs",
+                "C:\\workspace\\Along\\app\\src\\debug\\jniLibs",
+                "C:\\workspace\\Along\\app\\src\\xiaomi\\jniLibs",
+                "C:\\workspace\\Along\\app\\src\\main\\jniLibs"
+            ],
+            "main_manifest_path": "C:\\workspace\\Along\\app\\src\\main\\AndroidManifest.xml"
+        }
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "C:\\workspace\\Along\\app"
+        }
+    ],
+    "module_dependencies": {
+        "app": [
+            
+        ]
+    },
+    "databinding": [
+        
+    ],
+    "databinding_modules": [
+        
+    ],
+    "apt": {
+        
+    },
+    "retrolambda": {
+        
+    },
+    "databinding_compiler_jar": "",
+    "apt_libraries": {
+        "dagger": false,
+        "butterknife": false
+    }
+}
