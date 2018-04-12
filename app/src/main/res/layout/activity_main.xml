@@ -5,17 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:background="#ffffff"
     android:layout_height="match_parent"
-    tools:context="com.example.along.MainActivity">
+    tools:context="com.example.along.components.activities.MainActivity">
 
-    <com.example.along.FlowLayout
+    <com.example.along.views.FlowLayout
         android:background="#ff0000"
         android:padding="20dp"
         android:id="@+id/flow_activity_main"
         android:layout_width="match_parent"
         android:layout_height="400dp">
 
-    </com.example.along.FlowLayout>
+    </com.example.along.views.FlowLayout>
 
 
 </LinearLayout>

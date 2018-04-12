@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.antfortune.freeline'
 
 /**
  * 在项目根路径下创建一个文件key.properties
@@ -94,6 +95,9 @@ android {
         flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
     }
 
+    freeline {
+        productFlavor = "xiaomi"
+    }
 
 }
 
@@ -113,5 +117,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     //日志打印工具
-    compile 'com.orhanobut:logger:2.1.1'
+    implementation 'com.orhanobut:logger:2.1.1'
+
+
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/size_20"
+    android:layout_height="@dimen/size_60">
+
+    <ImageView
+        android:id="@+id/img_return"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_10"
+        android:background="@drawable/icon_return"
+        android:layout_width="@dimen/size_30"
+        android:layout_height="@dimen/size_30" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="唯我独尊"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_certain"
+        android:text="确定"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.example.along;
+package com.example.along.views;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -107,7 +107,7 @@ public class RingView extends View {
     protected void onDraw(Canvas canvas) {
         canvas.save();
 //        canvas.translate(getMeasuredWidth()/2,getMeasuredWidth()/2); //将坐标中心平移到要围绕的坐标点x,y
-        canvas.rotate(90,getMeasuredWidth()/2,getMeasuredWidth()/2);
+        canvas.rotate(89,getMeasuredWidth()/2,getMeasuredWidth()/2);
 
         initPaint();
 

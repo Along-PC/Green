@@ -1,4 +1,4 @@
-package com.example.along;
+package com.example.along.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
