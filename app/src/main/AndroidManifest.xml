@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.along">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".base.BaseApplication"
         android:allowBackup="true"
@@ -13,7 +15,7 @@
             android:name="CHANNEL"
             android:value="${CHANNEL_VALUE}" />
 
-        <activity android:name=".components.activities.MainActivity">
+        <activity android:name=".ui.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:background="#ffffff"
     android:layout_height="match_parent"
-    tools:context="com.example.along.components.activities.MainActivity">
+    tools:context="com.example.along.ui.activities.MainActivity">
 
     <com.example.along.views.FlowLayout
         android:background="#ff0000"
@@ -17,6 +17,12 @@
         android:layout_height="400dp">
 
     </com.example.along.views.FlowLayout>
+
+    <TextView
+        android:id="@id/tv_main"
+        android:text="@string/string_main_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50" />
 
 
 </LinearLayout>

@@ -118,6 +118,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     //日志打印工具
     implementation 'com.orhanobut:logger:2.1.1'
+    //网络请求工具
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    //网络请求拦截器
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    //json解析
+    implementation 'com.google.code.gson:gson:2.8.2'
 
 
 }

@@ -27,8 +27,10 @@ public abstract class BaseActivity extends Activity {
         //去除系统标题栏
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
-        //沉浸式
+
+        //沉浸式---通知栏
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        //沉浸式---状态栏
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
         mLayoutInflater = this.getLayoutInflater();
