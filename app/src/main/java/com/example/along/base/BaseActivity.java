@@ -22,6 +22,8 @@ public abstract class BaseActivity extends Activity {
     private TextView mTvTitle;
     private TextView mTvCertain;
 
+    private Activity mActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //去除系统标题栏
@@ -56,6 +58,7 @@ public abstract class BaseActivity extends Activity {
 
         initData();
 
+        mActivity=this;
     }
 
     //初始化控件

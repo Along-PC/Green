@@ -2,6 +2,7 @@ package com.example.along.net;
 
 import android.util.Log;
 
+import java.io.File;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
@@ -9,6 +10,8 @@ import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
 import okhttp3.FormBody;
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -25,7 +28,6 @@ import okhttp3.RequestBody;
 public class HttpUtils {
 
     private OkHttpClient mOkHttpClient;
-    private Call mCall;
 
 
     private HttpUtils(){
@@ -81,8 +83,8 @@ public class HttpUtils {
                 .url(url)
                 .method("GET",null)
                 .build();
-        mCall = mOkHttpClient.newCall(request);
-        mCall.enqueue(callback);
+        Call call = mOkHttpClient.newCall(request);
+        call.enqueue(callback);
     }
 
     //post请求
@@ -115,17 +117,47 @@ public class HttpUtils {
                 .url(url)
                 .method("POST",requestBody)
                 .build();
-        mCall = mOkHttpClient.newCall(request);
-        mCall.enqueue(callback);
+        Call call = mOkHttpClient.newCall(request);
+        call.enqueue(callback);
     }
 
 
-    //取消网络访问
-    public void cancel(){
-        if (mCall!=null) {
-            mCall.cancel();
+    //上传文件
+    public <T> void upload(String url, Map<String,String> requestParams, String param, File file, HttpCallback<T> callback){
+        Set<String> keySet = requestParams.keySet();
+        Iterator<String> iterator = keySet.iterator();
+
+        //表单请求体
+        MultipartBody.Builder builder = new MultipartBody.Builder();
+        builder.setType(MultipartBody.FORM);
+        while (iterator.hasNext()) {
+            //参数请求体
+            String key = iterator.next();
+            String value = requestParams.get(key);
+            builder.addFormDataPart(key,value);
         }
+
+        Log.d("request","#######################################################################");
+        Log.d("request:",url);
+        Log.d("request","#######################################################################");
+
+        //文件请求体
+        MediaType type=MediaType.parse("application/octet-stream");//"text/xml;charset=utf-8"
+        RequestBody fileBody=RequestBody.create(type,file);
+        builder.addFormDataPart(param,file.getName(),fileBody);
+        MultipartBody requestBody = builder.build();
+
+        //创建Request
+        Request request = new Request.Builder()
+                .url(url)
+                .post(requestBody)
+                .build();
+
+        Call call = mOkHttpClient.newCall(request);
+        call.enqueue(callback);
+
     }
+
 
     /**
      * 枚举单列获取请求对象
